@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tekweb1711016096'`, () => {
+  it(`should have as title 'tekweb'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tekweb1711016096');
+    expect(app.title).toEqual('tekweb');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('tekweb1711016096 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('tekweb app is running!');
   });
 });
